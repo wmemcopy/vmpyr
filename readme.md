@@ -8,10 +8,15 @@
 loadstring(game:HttpGet("https://vmpyr.vip/"))()
 ```
 
-## Supported Executors
-* Windows: AWP.GG, Solara, Synapse Z, Swift
+## Recommended Executors
+* Windows: AWP.GG, Solara
 * Apple: Macsploit
-* Mobile: Trigon, Codex
+* Mobile: Trigon
+
+## Supported Executors
+* Windows: AWP.GG, Solara, Synapse Z, Swift, Wave, Sirhurt, Xeno
+* Apple: Macsploit
+* Mobile: Trigon, Codex, Cryptic
 
 ## The VMPYR Team
 * Marshall
