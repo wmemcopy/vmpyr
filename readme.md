@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center" width="200" height="200">
   <img src="https://vmpyr.vip/Logo.png" />
 </p>
 
