@@ -1,1 +1,1 @@
-![alt text](https://vmpyr.vip/favicon.ico "vmpyr")
+![alt text](https://vmpyr.vip/favicon.ico "vmpyr") # VMPYR.VIP
