@@ -2,6 +2,9 @@
   <img src="https://vmpyr.vip/Logo.png" />
 </p>
 
-## Loadstring Script
+# vmpyr.vip
+
+## loadstring script
 ```lua
-loadstring(game:HttpGet("https://vmpyr.vip/"))()```
+loadstring(game:HttpGet("https://vmpyr.vip/"))()
+```
