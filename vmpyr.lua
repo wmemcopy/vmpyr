@@ -52,7 +52,7 @@ local vmpyr = {
 
     debug = true;
 
-    url = "https://raw.githubusercontent.com/wmemcopy/vmpyr/refs/heads/main/modules/%s.lua?token=GHSAT0AAAAAAC5IXIITEBLN7GFKVAINSIWGZ5CKZRQ";
+    url = "https://raw.githubusercontent.com/wmemcopy/vmpyr/refs/heads/main/modules/%s.lua?token=GHSAT0AAAAAAC5IXIISXZ5WP7KZOZBDYZP4Z5CNUHQ";
 }
 
 function vmpyr:import(name)
