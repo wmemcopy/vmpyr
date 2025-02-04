@@ -5,6 +5,7 @@
         with 💖 by marshall
 
         sophia is cute asf
+
 ]]
 
 -- helper functions
@@ -31,17 +32,20 @@ local clonef = clonefunction and clonefunction or retself
 local cloner = cloneref and cloneref or retself
 setmetatable(x, {
     __index = function(self, index)
-        local func = getgenv()[index]
-        if typeof(func) == "function" then
+        local obj = getgenv()[index]
+        if typeof(obj) == "table" then
             warn(f("%s was called!", index))
-            return clonef(func)
+            return cloner(obj)
+        end
+        if typeof(obj) == "function" then
+            warn(f("%s was called!", index))
+            return clonef(obj)
         end
     end
 })
 
 -- make framework
 local vmpyr = {
-
     version = "1.00b";
     revision = "preview";
     executor = x.identifyexecutor and l(x.identifyexecutor()) or "unknown";
@@ -60,7 +64,7 @@ end
 for _, module in next, {
     "signal"; "instance"; "loop";
 } do
-        print(f("importing module %s...", module))
-        x[module] = vmpyr:import(module)
+    print(f("importing module %s...", module))
+    x[module] = vmpyr:import(module)
 end
 

@@ -1,8 +1,8 @@
+local cloner = cloneref and cloneref or function(...) return ... end
+local run_service = cloner(game:GetService("RunService"))
+
 local loop = {}
 loop.__index = loop
-
-local cloneref = cloneref and cloneref or function(...) return ... end
-local run_service = cloneref(game:GetService("RunService"))
 
 loop.new = function(loopType, callback, interval)
     local self = setmetatable({}, loop)

@@ -1,3 +1,6 @@
+local clonef = clonefunction and clonefunction or function(...) return ... end
+local cloner = cloneref and cloneref or function(...) return ... end
+
 local signal = {}
 signal.__index = signal
 
