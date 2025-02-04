@@ -39,8 +39,7 @@ setmetatable(x, {
     end
 })
 
-x.print()
-
+-- make framework
 local vmpyr = {
 
     version = "1.00b";
@@ -57,8 +56,9 @@ function vmpyr:import(name)
 end
 
 
+-- import modules
 for _, module in next, {
-    "signal";
+    "signal"; "instance"; "loop";
 } do
         print(f("importing module %s...", module))
         x[module] = vmpyr:import(module)
