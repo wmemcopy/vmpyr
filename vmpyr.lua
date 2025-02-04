@@ -27,7 +27,6 @@ local retnil = function(...) return nil end
 
 -- call protection
 local x = {}
-
 local clonef = clonefunction and clonefunction or retself
 local cloner = cloneref and cloneref or retself
 setmetatable(x, {
@@ -40,6 +39,8 @@ setmetatable(x, {
     end
 })
 
+x.print()
+
 local vmpyr = {
 
     version = "1.00b";
@@ -48,7 +49,7 @@ local vmpyr = {
 
     debug = true;
 
-    url = "https://raw.githubusercontent.com/wmemcopy/vmpyr/refs/heads/main/modules/%s.lua";
+    url = "https://raw.githubusercontent.com/wmemcopy/vmpyr/refs/heads/main/modules/%s.lua?token=GHSAT0AAAAAAC5IXIITEBLN7GFKVAINSIWGZ5CKZRQ";
 }
 
 function vmpyr:import(name)
