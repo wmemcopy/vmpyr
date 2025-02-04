@@ -1,1 +1,3 @@
-![alt text](https://vmpyr.vip/Logo.png "vmpyr")
+<p align="center">
+  <img src="https://vmpyr.vip/Logo.png" />
+</p>
