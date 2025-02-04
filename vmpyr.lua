@@ -32,17 +32,31 @@ local clonef = clonefunction and clonefunction or retself
 local cloner = cloneref and cloneref or retself
 setmetatable(x, {
     __index = function(self, index)
-        local obj = getgenv()[index]
+        local obj = clonef(getgenv)()[index]
         if typeof(obj) == "table" then
-            warn(f("%s was called!", index))
+            warn(f("%s was referenced!", index))
             return cloner(obj)
         end
         if typeof(obj) == "function" then
             warn(f("%s was called!", index))
             return clonef(obj)
         end
-    end
+    end;
+    __newindex = function(self, index, value)
+        local obj = clonef(getgenv)()[index]
+        if typeof(obj) == "table" then
+            warn(f("%s was initialized!", index))
+            return cloner(rawset)(self, index, value)
+        end
+        if typeof(obj) == "function" then
+            warn(f("%s was initialized!", index))
+            return clonef(rawset)(self, index, value)
+        end
+    end;
 })
+x.hookmetamethod = x.hookmetamethod and x.hookmetamethod or (x.hookfunction and function(object, method, hook)
+    return x.hookfunction(getmetatable(object)[method], hook)
+end)
 
 -- make framework
 local vmpyr = {
@@ -68,3 +82,4 @@ for _, module in next, {
     x[module] = vmpyr:import(module)
 end
 
+print("loaded vmpyr.vip!")
