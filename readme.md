@@ -19,6 +19,6 @@ loadstring(game:HttpGet("https://vmpyr.vip/"))()
 * Mobile: Trigon, Codex, Cryptic
 
 ## The VMPYR Team
-* Marshall
-* Arpon AG
-* Zphyr
+* Marshall (Literally me OMG THAT'S ME)
+* Arpon AG 💙 (Literal best friend)
+* Zphyr 💖 (Cutest girl on earth)
