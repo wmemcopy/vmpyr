@@ -33,7 +33,7 @@ end
 
 function instance:tween(properties, info, play)
     if self.instance and typeof(info) == "TweenInfo" and type(properties) == "table" then
-        local tween = tween_service:Create(self.instance, TweenInfo.new(unpack(info)), properties)
+        local tween = tween_service:Create(self.instance, info, properties)
         if play then
             tween:Play()
         end
