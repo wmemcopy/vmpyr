@@ -25,7 +25,7 @@ return function()
     label.TextColor3 = Color3.fromRGB(255, 112, 241)
     
     local stroke = Instance.new("UIStroke", label)
-    stroke.Thickness = 20
+    stroke.Thickness = 8
     stroke.Color = Color3.fromRGB(227, 50, 210)
     
     cloneref(game:GetService("TweenService")):Create(label, sophia_tween, {
