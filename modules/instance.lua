@@ -56,4 +56,4 @@ function instance:raw()
     return self.instance
 end
 
-return cloner(instance)
+return instance
