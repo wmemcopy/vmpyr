@@ -1,0 +1,9 @@
+{
+    "robloxLsp.diagnostics.disable": [
+        "deprecated",
+        "undefined-global"
+    ],
+    "robloxLsp.diagnostics.globals": [
+        "identifyexecutor"
+    ]
+}
