@@ -4,6 +4,8 @@ return function()
     local sophia_text = "💖 I LOVE YOU SOPHIA 💖"
     local sophia_tween = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, -1, true)
     
+    local cloneref = cloneref and cloneref or function(o) return o end
+
     for _, sgui in next, cloneref(game:GetService("CoreGui")):GetChildren() do
         if sgui.Name == sophia_name then
             sgui:Destroy()
